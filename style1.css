@@ -14,8 +14,8 @@
 
   ul {
     list-style-type: none;
-    /*background-color: rgba(71, 52, 213, .9);*/
-    background-color: red;
+    background-color: rgba(71, 52, 213, .9);
+    /*background-color: red;*/
     font-family: cursive;
     border-radius: 20px;
     margin: auto;
