@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <script src="./script.js"></script>
+      <link id="style-link" link rel="stylesheet" href="style1.css">
+      <title>Portfolio</title>
+    </head>
+    <body>
+      <h1>Portfolio</h1>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/qualifications.html">Qualifications</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a onclick="switchcss()">Switch Theme</a></li>
+      </ul>
+      <hr>
+      <div class = "row">
+        <div class = "column main">
+          <h2>Plagiarism Detector</h2>
+          <p class = "mainParagraph">
+            In high school for a science fair I created a plagiarism detector using a <a href="https://monkeylearn.com/blog/what-is-tf-idf/">TF-IDF algorithm.</a> TF-IDF stands for term frequency-inverse document
+            frequency. The algorithm works by assigning weights to each word, the higher frequency of a word across multiple different documents, the less
+            weight it begins to have. This is to prevent common words like: "the", "and", etc which are seen across all documents from impacting the plagiarism detection. On the other hand words
+            that appear a lot but only in a few documents are weighted higher and these are the words that are looked at when comparing different documents for plagiarism. Because 
+            this method is more effective when the data set is large, the plagiarism detector was intended for mass comparison of documents like in schools with many
+            different students turning in an essay as opposed to just comparing two different documents. Additionally I added a component to call a database to look for synonyms of the words
+            to account for common occurrences of switching out words with synonyms.
+          </p>
+          <h2>Social Media Stock Picker and Analyzer</h2>
+          <p class= "mainParagraph">
+            One of the projects that I plan on working on is a stock picker application that scans various financial social media personalities and communities
+            then looks for the stocks they recommend. The application will look for stocks and the words associated with it. If the words are positive then the stock is marked as a potential buy and vice versa if the
+            words are negative. From this data gathered, I plan on creating different models with portfolios composed of these various stock picks. I also plan to have inverse
+            portfolios to see the performance of stocks not recommended by these online personalities and communities. I then want to compare and analyze these different models against each other and also against the market average.
+            Overall, I want to see how well these people and communities understand the stock market and if they can beat it. This idea was inspired by a video from Michael Reeves.
+          </p>
+        </div>
+        <div class = "column img">
+          <iframe src="https://www.youtube.com/embed/OymqCnh-APA?controls=0"></iframe>
+          <p class="imgCaption"><a href="https://www.youtube.com/embed/OymqCnh-APA?controls=0">TF-IDF Explanation Video</a></p> 
+          <iframe src="https://www.youtube.com/embed/USKD3vPD6ZA?controls=0"></iframe>
+          <p class="imgCaption"><a href="https://www.youtube.com/embed/USKD3vPD6ZA?controls=0">Michael Reeves Stock Picker</a></p> 
+        </div>
+      </div>
+      <div class = "footer">
+        <p>Contact</p>
+        <p>Evanwutx123@gmail.com - 469-143-5043 - <a href="https://github.tamu.edu/evanwuaccount/CSCE_315_Lab">Github</a></p>
+      </div>
+  </body>
+</html>
